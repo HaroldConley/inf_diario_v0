@@ -12,8 +12,8 @@ st.title('Informe Diario - Automatizado')
 st.subheader('Graba un audio indicando el elemento revisado y la observación.')
 
 audio = mic_recorder(
-    start_prompt="Start recording",
-    stop_prompt="Stop recording",
+    start_prompt="Comienza Grabación",
+    stop_prompt="Deten Grabación",
     just_once=False,
     use_container_width=False,
     callback=None,
