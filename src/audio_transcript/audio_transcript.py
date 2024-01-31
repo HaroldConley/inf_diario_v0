@@ -2,7 +2,7 @@ import whisper
 
 
 def transcript(ruta_audio):
-    model = whisper.load_model("base")
+    model = whisper.load_model("small")
     result = model.transcribe(ruta_audio, language='spanish')
 
     return result
