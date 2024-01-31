@@ -33,7 +33,7 @@ if audio:
         temp_file.write(audio['bytes'])
 
     # Orquestador
-    ruta_excel = r'C:\Harold_DS\2024-01\02-informe_diario\02-informe_diario\src\excel_fill\test.xlsx'
+    ruta_excel = r'test.xlsx'
     audio_a_xls(temp_filename, ruta_excel)
 
     # Elimina el archivo temporal después de usarlo
