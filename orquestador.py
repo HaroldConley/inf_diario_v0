@@ -1,10 +1,11 @@
+import os
 from src.audio_transcript.audio_transcript import transcript
 from src.data_extraction.data_extraction import data_extraction
 from src.excel_fill.excel_fill import escribir_celda_excel
 
 
 def audio_a_xls(ruta_audio, ruta_excel):
-    api_key = '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'
+    api_key = os.environ['OPENAI_API_KEY']
 
     transcripcion = transcript(ruta_audio=ruta_audio)
     datos_dict = data_extraction(api_key, transcripcion['text'])
