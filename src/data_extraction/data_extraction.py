@@ -31,7 +31,7 @@ def data_extraction(api_key, transcripcion):
 
 
 if __name__ == '__main__':
-    api_key = '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'
+    api_key=os.environ['OPENAI_API_KEY']
     transcripcion = """
             ' Estamos revisando los asensores y se observa que aún se mantienen las filtraciones activas.'"""
 
